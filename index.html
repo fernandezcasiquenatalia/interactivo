@@ -479,6 +479,13 @@ document.getElementById('prueba').onclick = function() {
     document.getElementById("sad-gif").style.display = "block"; 
     document.getElementById("resultado").setAttribute("class", "visible");
 }
+document.getElementById('boton*reiniciar').onclick = function(){
+  puntaje = 0;
+  document.getElementById("resultado").style.display = "none";
+  document.getElementById("imagen-resultado").style.display = "none";
+  document.getElementById("calif").textContent = "0/10";
+  alert("Puedes volver a realizar el test para tener una mejor calificacion.");
+}
 
 };
 
