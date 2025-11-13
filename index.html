@@ -35,7 +35,7 @@
     .barra {
       padding: 10px;
       margin:5px;
-      background: rgb(67, 61, 78);
+      background: #433d4e;
       flex:3;
       border-radius:10px;
       display:flex;
@@ -63,6 +63,17 @@
       flex-direction:column;
       flex-wrap:wrap;
       align-items: center;
+    }
+    #boton-reiniciar {
+      background-color: #433d4e;
+      color: #000000;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
     
     #footer {
@@ -280,6 +291,7 @@
     <span id="calif" class="texto-rojo">0/0</span>
     <img id="imagen-resultado" width="200px" src="img/ping.gif" style="display: none;" />
     <img id="sad-gif" width="200px" src="img/sad.gif" style="display: none;" />
+    <button id="boton-reiniciar">Reiniciar</button>
 </div>
     </div>
   </div>
@@ -479,14 +491,12 @@ document.getElementById('prueba').onclick = function() {
     document.getElementById("sad-gif").style.display = "block"; 
     document.getElementById("resultado").setAttribute("class", "visible");
 }
-document.getElementById('boton*reiniciar').onclick = function(){
+document.getElementById('boton-reiniciar').onclick = function(){
   puntaje = 0;
   document.getElementById("resultado").style.display = "none";
   document.getElementById("imagen-resultado").style.display = "none";
   document.getElementById("calif").textContent = "0/10";
   alert("Puedes volver a realizar el test para tener una mejor calificacion.");
-}
-
 };
 
   </script>
