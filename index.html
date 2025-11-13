@@ -57,13 +57,15 @@
       flex-wrap:wrap;
       justify-content:center;
     }
-
-    #resultado {
-      display:flex;
-      flex-direction:column;
-      flex-wrap:wrap;
-      align-items: center;
+     #resultado {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      text-align: center;
+      width: 100%;
     }
+   
     #boton-reiniciar {
       background-color: #a82b2b;
       color: #ffffff;
@@ -286,8 +288,7 @@
           <img id="imagen-info" src="img/hotspot-cursor.png" alt="Imagen info" style="width:100%; height:100%; border-radius:10px;">
         </div>
       </div>
-      <div id="resultado" style="display: none;"
-    </div>
+      <div id="resultado" style="display: none;">
     <h2>Tu resultado:</h2>
     <span id="calif" class="texto-rojo">0/10</span>
     <img id="imagen-resultado" width="200px" src="img/ping.gif" style="display: none;" />
