@@ -490,14 +490,14 @@ document.getElementById('prueba').onclick = function() {
     document.getElementById("imagen-resultado").setAttribute("src", 'img/winn.gif'); 
     document.getElementById("imagen-resultado").style.display = "block"; 
     document.getElementById("sad-gif").style.display = "none"; 
-    document.getElementById("resultado").setAttribute("class", "visible");
+    document.getElementById("resultado").style.display = "block";
 } else {
     alert("Has respondido " + puntaje + " preguntas correctamente. ¡Sigue intentando!");
     document.getElementById("calif").textContent = puntaje + "/10";
     document.getElementById("imagen-resultado").style.display = "none"; 
     document.getElementById("sad-gif").setAttribute("src", 'img/sad.gif'); 
     document.getElementById("sad-gif").style.display = "block"; 
-    document.getElementById("resultado").setAttribute("class", "visible");
+    document.getElementById("resultado").style.display = "block";
 }
 }
 document.getElementById('boton-reiniciar').onclick = function(){
